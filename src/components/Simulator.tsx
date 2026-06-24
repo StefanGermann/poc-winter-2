@@ -142,7 +142,7 @@ export default function Simulator() {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-slate-800">POC Simulations-Tool</h1>
-          <p className="text-slate-500 mt-1">Adelboden 2026/27 – Produktkurven-Modell</p>
+          <p className="text-slate-500 mt-1">Simulation Modellwechsel</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
@@ -240,14 +240,14 @@ export default function Simulator() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="bg-slate-50 text-slate-500 text-xs uppercase tracking-wide">
-                  <th className="text-left px-4 py-3 font-semibold">Produkt</th>
-                  <th className="text-left px-4 py-3 font-semibold">Share (%)</th>
-                  <th className="text-right px-4 py-3 font-semibold">Eff. Share</th>
+                  <th className="text-left px-4 py-3 font-semibold">Product</th>
+                  <th className="text-left px-4 py-3 font-semibold">Rev Share (%)</th>
+                  <th className="text-right px-4 py-3 font-semibold">Rev Share</th>
                   <th className="text-right px-4 py-3 font-semibold">Early Bookers</th>
                   <th className="text-right px-4 py-3 font-semibold bg-blue-50">w1</th>
                   <th className="text-right px-4 py-3 font-semibold bg-purple-50">w2_old</th>
-                  <th className="text-right px-4 py-3 font-semibold">Effekt</th>
-                  <th className="text-right px-4 py-3 font-semibold">Total Effekt</th>
+                  <th className="text-right px-4 py-3 font-semibold">Effect</th>
+                  <th className="text-right px-4 py-3 font-semibold">Total Effect</th>
                 </tr>
               </thead>
               <tbody>
@@ -335,20 +335,7 @@ export default function Simulator() {
           </div>
         </div>
 
-        {/* Legend */}
-        <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3 text-xs text-slate-500">
-          <div className="bg-white rounded-xl border p-3">
-            <span className="font-semibold text-blue-700">w1:</span> Produktspezifischer EBD-Gewicht (individuelle EB-Rate)
-          </div>
-          <div className="bg-white rounded-xl border p-3">
-            <span className="font-semibold text-purple-700">w2_old:</span> Portfolio-EBD-Gewicht (Portfolio EB-Rate)
-          </div>
-          <div className="bg-white rounded-xl border p-3">
-            <span className="font-semibold text-slate-700">Effekt:</span> w2_old − w1 (Differenz bei Verwendung der Portfolio-Rate)
-          </div>
-          <div className="bg-white rounded-xl border p-3">
-            <span className="font-semibold text-slate-700">Total Effekt (J6):</span> Effekt × Share, summiert über alle Produkte
-          </div>
+        
         </div>
       </div>
     </div>
