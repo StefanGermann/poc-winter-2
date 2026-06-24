@@ -74,11 +74,11 @@ function getEarlyBookers(adoption: Adoption): number[] {
   return [d1, d1, d2, d2, d2, d3, d3, d3, d3, d3, d4, d4, d4, d4, d4]
 }
 
-function fmt(v: number, digits = 3): string {
+function fmt(v: number, digits = 1): string {
   return (v * 100).toFixed(digits) + '%'
 }
 
-function fmtRaw(v: number, digits = 3): string {
+function fmtRaw(v: number, digits = 1): string {
   return (v * 100).toFixed(digits) + '%'
 }
 
