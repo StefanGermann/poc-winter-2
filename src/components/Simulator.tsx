@@ -165,7 +165,7 @@ export default function Simulator() {
                 {maxEBDPct}%
               </span>
             </div>
-            <p className="text-xs text-slate-400 mt-2">Aktueller Wert (A3): {maxEBD.toFixed(4)}</p>
+            <p className="text-xs text-slate-400 mt-2">Wir nehmen hier an, dass der Wert nicht verändert wird.</p>
           </div>
 
           {/* Adoption */}
@@ -189,7 +189,7 @@ export default function Simulator() {
               ))}
             </div>
             <p className="text-xs text-slate-400 mt-2">
-              Basis-EB-Rate: {(ADOPTION_BASE[adoption] * 100).toFixed(0)}%
+              Diese Angabe gibt an, wie stark die Gäste zum Voraus buchen.
             </p>
           </div>
 
@@ -199,17 +199,17 @@ export default function Simulator() {
           }`}>
             <div>
               <label className="block text-sm font-semibold text-slate-600 uppercase tracking-wide mb-1">
-                Total_Effect (J6)
+                Umsatzwirkung
               </label>
               <p className="text-xs text-slate-500">Gesamtportfolio-Effekt</p>
             </div>
             <div className={`text-4xl font-bold tabular-nums mt-4 ${
               totalEffect < 0 ? 'text-red-600' : 'text-green-600'
             }`}>
-              {(totalEffect * 100).toFixed(4)}%
+              {(totalEffect * 100).toFixed(2)}%
             </div>
             <div className="text-sm text-slate-500 mt-2">
-              Portfolio EB-Rate: {(portfolioEB * 100).toFixed(2)}%
+              Frühbucherrate (5+ Tage): {(portfolioEB * 100).toFixed(2)}%
             </div>
           </div>
         </div>
@@ -244,8 +244,8 @@ export default function Simulator() {
                   <th className="text-left px-4 py-3 font-semibold">Rev Share (%)</th>
                   <th className="text-right px-4 py-3 font-semibold">Rev Share</th>
                   <th className="text-right px-4 py-3 font-semibold">Early Bookers</th>
-                  <th className="text-right px-4 py-3 font-semibold bg-blue-50">w1</th>
-                  <th className="text-right px-4 py-3 font-semibold bg-purple-50">w2_old</th>
+                  <th className="text-right px-4 py-3 font-semibold bg-blue-50">winter_1</th>
+                  <th className="text-right px-4 py-3 font-semibold bg-purple-50">winter_2</th>
                   <th className="text-right px-4 py-3 font-semibold">Effect</th>
                   <th className="text-right px-4 py-3 font-semibold">Total Effect</th>
                 </tr>
