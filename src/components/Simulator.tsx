@@ -79,7 +79,7 @@ function fmt(v: number, digits = 3): string {
 }
 
 function fmtRaw(v: number, digits = 3): string {
-  return v.toFixed(digits)
+  return (v * 100).toFixed(digits) + '%'
 }
 
 export default function Simulator() {
