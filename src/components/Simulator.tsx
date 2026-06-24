@@ -206,10 +206,10 @@ export default function Simulator() {
             <div className={`text-4xl font-bold tabular-nums mt-4 ${
               totalEffect < 0 ? 'text-red-600' : 'text-green-600'
             }`}>
-              {(totalEffect * 100).toFixed(2)}%
+              {(totalEffect * 100).toFixed(1)}%
             </div>
             <div className="text-sm text-slate-500 mt-2">
-              Frühbucherrate (5+ Tage): {(portfolioEB * 100).toFixed(2)}%
+              Frühbucherrate (5+ Tage): {(portfolioEB * 100).toFixed(1)}%
             </div>
           </div>
         </div>
@@ -313,7 +313,7 @@ export default function Simulator() {
                     {(normalizedShares.reduce((s, v) => s + v, 0) * 100).toFixed(1)}%
                   </td>
                   <td className="px-4 py-3 text-right tabular-nums text-slate-600">
-                    {(portfolioEB * 100).toFixed(2)}%
+                    {(portfolioEB * 100).toFixed(1)}%
                   </td>
                   <td className="px-4 py-3 text-right bg-blue-100/70 font-mono">
                     {fmtRaw(rows.reduce((s, r) => s + r.w1 * r.share, 0))}
