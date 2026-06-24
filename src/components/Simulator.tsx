@@ -141,15 +141,15 @@ export default function Simulator() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-slate-800">POC Simulations-Tool</h1>
-          <p className="text-slate-500 mt-1">Simulation Modellwechsel</p>
+          <h1 className="text-3xl font-bold text-slate-800">Umsatzwirkung Pricing-Modell</h1>
+          <p className="text-slate-500 mt-1">Simulation Modellwechsel Winter_1 auf Winter_2</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
           {/* max_EBD Slider */}
           <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
             <label className="block text-sm font-semibold text-slate-600 uppercase tracking-wide mb-3">
-              max_EBD
+              maximaler Frühbucherrabatt
             </label>
             <div className="flex items-center gap-4">
               <input
